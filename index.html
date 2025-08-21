@@ -1,0 +1,46 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width"><link rel="icon" href="data:">
+<title>tokipona-input</title></head><body>
+
+
+<h1>tokipona-input / <span class=tokipona>ilo sitelen pi toki pona</span></h1>
+
+in Latin alphabet<br>
+<textarea id="talatin" spellcheck="false"></textarea>
+in Tokipona
+<textarea id="tatokipona" class="tokipona" spellcheck="false"></textarea>
+
+<script type="module">
+talatin.onkeyup = () => {
+  tatokipona.value = talatin.value;
+};
+tatokipona.onkeyup = () => {
+  talatin.value = tatokipona.value;
+};
+</script>
+
+<style>
+@font-face {
+  /* from https://linjasuwi.ap5.dev/ */
+  font-family: 'linja suwi';
+  src: url('https://code4fukui.github.io/tok2jpn/linjasuwi.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+textarea {
+  font-size: 5vw;
+	display: block;
+	padding: 5px;
+	margin: 20px;
+	width: 90%;
+	height: 30vh;
+}
+.tokipona {
+  font-family: linja suwi;
+}
+</style>
+
+<hr>
+Related: <a href=https://code4fukui.github.io/tok2jpn/>トキポナ辞書</a>, <a href=https://code4fukui.github.io/mekuriawase-tokipona/>トキポナめくりあわせ</a><br>
+<a href=https://github.com/code4fukui/tokipona-input/>src on GitHub</a><br>
+
+</body></html>
