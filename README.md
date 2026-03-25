@@ -1,24 +1,21 @@
 # tokipona-input
-日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
 
-A simple in-browser Toki Pona input tool.
+A Web/Code project by [Code for FUKUI](https://github.com/code4fukui).
 
-## Demo
-The demo is available at https://code4fukui.github.io/tokipona-input/
+**Live demo**: https://code4fukui.github.io/tokipona-input/
 
-## Features
-- Provides a textarea for inputting Toki Pona text in Latin alphabet
-- Automatically converts the input to Toki Pona script in the second textarea
-- Bi-directional input - changes in either textarea update the other
+## Technology Stack
 
-## Requirements
-This project runs in the browser and has no external dependencies.
 
-## Usage
-1. Open the demo page in a web browser.
-2. Type Toki Pona text in the "in Latin alphabet" textarea.
-3. The "in Tokipona" textarea will automatically update with the corresponding Toki Pona script.
-4. You can also type directly in the "in Tokipona" textarea, and the "in Latin alphabet" textarea will update accordingly.
+## Installation & Setup
+
+No build step required. Clone the repository and open `index.html` in a browser,
+or visit the live demo at https://code4fukui.github.io/tokipona-input/
+
+## Contributing
+
+Contributions are welcome. Please open an issue or pull request on GitHub.
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+
+MIT License. See [LICENSE](./LICENSE) for details.
